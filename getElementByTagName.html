@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>dom manipulation</title>
+        <script type="text/javascript">
+            function changeStyling()
+            {
+                var para=document.getElementsByTagName("p");
+                //para[3].style.fontSize=25;
+                for (var i=0;i<para.length;i++);
+                {
+                    para[i].style.fontSize=22;
+                }
+
+            }
+
+        </script>    
+    </head>
+    <body>
+        <p>this is paragraph1</p>
+        <p>this is paragraph2</p>
+        <p>this is paragraph3</p>
+        <p>this is paragraph4</p>
+        <br>
+        <button onclick="changeStyling()">click me</button>
+    </body>
+</html>

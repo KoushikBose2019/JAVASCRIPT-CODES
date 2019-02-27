@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Dom manipulation</title>
+        <script type="text/javascript">
+        function fn1()
+        {
+            var x=document.getElementById("rd1");
+            var y=document.getElementById("rd2");
+            if (rd1.checked==true)
+              alert("the channel selected is : "+x.value);
+            else if(rd2.checked==true) 
+               alert("the channel selected is : "+y.value); 
+            else
+               alert("no channel is selected");   
+        }
+                   
+        </script>
+    </head>
+    <body>
+        <input id="rd1" name="grp1" type="radio" value="ss">simple snippets</input>
+        <input id="rd2" name="grp1" type="radio" value="telusko learning">telusko learning</input>
+        <br>
+        <button onclick="fn1()">click here</button>
+    </body>
+</html>

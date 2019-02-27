@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>dom manipulation</title>
+        <script type="text/javascript">
+        function fn1()
+        {
+            var select=document.getElementById("selectbox");
+            alert(select.options[select.selectedIndex].value)
+        }
+        </script>
+    </head>
+    <body>
+        <select id="selectbox">
+         <option value="ss">simple snippets</option>
+         <option value="telusko learning">telesko learning</option>
+         <option value="tutorials point">tutorials point</option>
+         <option value="javascript">javascript</option>
+        </select>
+        <br>
+        <button onclick="fn1()">click me</button>
+        </body>
+</html>

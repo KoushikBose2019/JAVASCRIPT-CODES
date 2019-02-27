@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>regular expression in js</title>
+        <script type="text/javascript">
+        function validiate()
+        {
+            var username=document.getElementById("uname").value;
+            //var password=document.getElementById("pass").value;
+            //creating a regular expression javascript
+            //character set and range function in regex
+            var regx=/[0-7]a[6-7]c/;
+            //var regx=new RegExp ("E00");
+            if(regx.test(username))
+            {
+                alert("valid username");
+            }
+            else{
+                alert("invalid username");
+            }
+        }
+       
+        </script>
+    </head>
+    <body>
+        <form action="message.html">
+            <input id="uname" placeholder="username" type="text"/><br><br>
+            <button onclick="validiate()" type="submit">submit</button>
+        </form>
+    </body>
+
+</html>

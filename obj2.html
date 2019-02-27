@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>introduction to oop</title>
+    <script type="text/javascript">
+    function car(car_brand,car_model,price)
+    {
+        this.car_brand=car_brand;
+        this.car_model=car_model;
+        this.price=price;
+        this.teslautopilot= function()
+        {
+        document.write("<h2>this car has auto pilot mode</h2>");
+        }
+
+        }
+        var c1=new cars("tesla","model3",35000);
+        var c2=new cars("tesla","model3",40000);
+        c2.testautopilot();
+        document.write("<h4>"+c2.car_price+"</h4>");
+    </script>
+</head>
+
+</html>

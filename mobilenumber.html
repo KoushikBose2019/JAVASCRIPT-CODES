@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>mobile number validiation</title>
+        <script type="text/javascript">
+        /*
+        \d=match any digit(equal to [0-9])
+        \w=match any word character(a-z,A-Z,0-9 & _)
+        \s=match whitespace character(eg-space & tab)
+        \t=match a tab only
+        */
+        function validiate()
+        {
+            var text=document.getElementById("text1").value;
+            var regx=/^[7-9][0-9]{9}$/;
+            if(regx.test(text))
+            {
+                document.getElementById("lbtext").innerHTML="valid";
+                document.getElementById("lbtext").style.visibility="visible";
+                document.getElementById("lbtext").style.color="green";
+            }
+            else{
+                document.getElementById("lbtext").innerHTML="invalid";
+                document.getElementById("lbtext").style.visibility="visible";
+                document.getElementById("lbtext").style.color="red";
+            }
+        }
+        </script>
+        </head>
+        <body>
+            <form>
+             <input id="text1" placeholder="cellphone" type="text"/><br><br>
+             <label id="lbtext" style="color : red;visibility:hidden">Invalid</label>
+             <br>
+             <button onclick="validiate()" type="button">submit</button>
+            </form>
+        </body>
+</html>

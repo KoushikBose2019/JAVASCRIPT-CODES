@@ -1,0 +1,24 @@
+<DOCTYPE!>
+
+   <html>
+    <head>
+        <title>debugging in js</title>
+        <script type="text/javascript">
+        function addvalue()
+        {
+            var a=document.getElementById("t1").value;
+            var b=document.getElementById("t2").value;
+            //document.getElementById("op").innerHTML="Result = "+(a+b);
+            console.log(a+b);
+        }
+            
+        </script>
+    </head>
+    <body>
+     <input id="t1" type="text" placeholder="text 1"/><br><br>
+     <input id="t2" type="text" placeholder="text 2"/><br><br>
+     <button onclick="addvalue()" id="btnadd">add</button>
+     <h2 id="op">result=</h2>
+    </body>
+</html>
+</DOCTYPE>

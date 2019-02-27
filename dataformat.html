@@ -1,0 +1,41 @@
+<html>
+    <head>
+     <title>datavalidiation</title>
+     <script type="text/javascript">
+     function validiate()
+     {
+         var uname=document.getElementById("uname");
+         var pass=document.getElementById("pass");
+
+         if(uname.value.trim()=="")
+         {
+             alert("blank username");
+             uname.style.border="solid 3 px red";
+             return false;
+         }
+         else if(pass.value.trim()=="")
+         {
+           alert("blank password");
+           return false;
+         }
+         else if(pass.value.trim().length<5)
+         {
+             alert("password is too short");
+             return false;
+         }
+         else{
+             return true;
+         }
+     }         
+      
+     </script>
+    </head>
+    <body>
+     <form onsubmit="return validiate()";
+      action="message2.html">
+      <input id="uname" placeholder="username" type="text"/><br><br>
+      <input id="pass" placeholder="password" type="password"/><br><br>
+      <button onclick="validiate()" type="submit">submit</button>  
+     </form>
+    </body>
+</html>

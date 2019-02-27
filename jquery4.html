@@ -1,0 +1,21 @@
+<html>
+    <title>jquery selecter</title>
+    <body>
+    <div>
+    <ul>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        </ul>    
+    </div>
+    <button onclick="fn1()" id="btn1">click me</button>
+ </body>
+ <script src="jquery.js" type="text/javascript"></script>
+ <script>
+     $("button").click()
+     function fn1()
+     {
+      $("#firstdiv").fadeToggle(1000)
+     } 
+ </script>

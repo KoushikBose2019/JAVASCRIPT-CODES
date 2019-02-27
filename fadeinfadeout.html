@@ -1,0 +1,37 @@
+<html>
+    <head>
+<title>fade in fadeout</title>
+<script type="text/javascript">
+    var opacity=0;
+    var intervalID=0;
+    function fadein()
+    {
+        intervalID=setInterval(hide,20);
+    }
+    function hide()
+    {
+         var img=document.getElementById("img1");
+         opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+         if(opacity>0)
+         {
+             opacity=opacity-0.1;
+             img.style.opacity=opacity;
+             console.log(opacity);
+         }
+         else
+         {
+          clearInterval(intervalID);
+         }
+    }
+
+</script>
+</head>
+<body>
+    <button onclick="fadein()"id="btnadd">fadein</button>
+    <br>
+    <img id="python.png"  src="C:\python.png" width="250px"/>
+    <br>
+    <button onclick="fadeout()" id="btnstop">fadeout</button>
+</body>
+    </head>
+    </html>
